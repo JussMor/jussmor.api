@@ -6,7 +6,7 @@ import Tags from './collections/Tags';
 import Users from './collections/Users';
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: 'https://jussmorapi-production.up.railway.app',
   admin: {
     user: Users.slug,
   },
