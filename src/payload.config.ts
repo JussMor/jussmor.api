@@ -6,10 +6,9 @@ import Tags from './collections/Tags';
 import Users from './collections/Users';
 require('dotenv').config();
 
-const defaultPort = process.env.PORT || 'http://localhost:3000'
-
+const defaultServerUrl = process.env.SERVER_URL || `http://localhost:${process.env.PORT}`
 export default buildConfig({
-  serverURL: defaultPort,
+  serverURL: defaultServerUrl,
   admin: {
     user: Users.slug,
   },
