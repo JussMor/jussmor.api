@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const defaultServerUrl = process.env.SERVER_URL || `http://localhost:${process.env.PORT}`
 export default buildConfig({
-  serverURL: defaultServerUrl,
+  serverURL: `${defaultServerUrl}`,
   admin: {
     user: Users.slug,
   },
