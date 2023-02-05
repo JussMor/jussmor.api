@@ -4,11 +4,9 @@ import Categories from './collections/Categories';
 import Posts from './collections/Posts';
 import Tags from './collections/Tags';
 import Users from './collections/Users';
-require('dotenv').config();
 
-const defaultServerUrl = process.env.SERVER_URL || `http://localhost:${process.env.PORT}`
 export default buildConfig({
-  serverURL: `${defaultServerUrl}`,
+  serverURL: 'http://localhost:3000',
   admin: {
     user: Users.slug,
   },
